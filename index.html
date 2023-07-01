@@ -23,9 +23,6 @@
 			font-size: 1.5em;
 			margin-right: 10px;
 		}
-		.tab {
-			display: none;
-		}
 	</style>
 </head>
 <body>
@@ -33,16 +30,7 @@
 	<label id="maxNumberLabel" for="maxNumberSlider">Max Number:</label>
 	<input id="maxNumberSlider" type="range" min="2" max="50" step="2" value="50" onchange="updateMaxNumber()">
 	<button id="generateButton" onclick="generatePairs()">Generate Pairs</button>
-	<div id="tabs">
-		<button class="tabButton" onclick="openTab(1)">Tab 1</button>
-		<button class="tabButton" onclick="openTab(2)">Tab 2</button>
-	</div>
-	<div class="tab" id="tab1">
-		<div id="pairList"></div>
-	</div>
-	<div class="tab" id="tab2">
-		<!-- Content for Tab 2 goes here -->
-	</div>
+	<div id="pairList"></div>
 
 	<script>
 		var maxNumberSlider = document.getElementById("maxNumberSlider");
@@ -70,6 +58,7 @@
 				pairs.add([num1, num2]);
 			}
 
+			
 			pairList.innerHTML = "";
 			pairs.forEach(function(pair) {
 				var pairText = document.createElement("span");
@@ -81,26 +70,11 @@
 				pairList.appendChild(pairText);
 				pairText.addEventListener("click", function() {
 					if (pair.includes(29) && pair.includes(22)) {
-						pairList.innerHTML = "<span style='font-size: 4em;'>3-3-02-P99</span>";
+						pairList.innerHTML = "<span style='font-size: 4em;'>3-3-02-P99 ....................................2q72q6o3tbt913wragnols4jvdqjbz7b6gw5vbxy1dpmfd28a3b6q1hcluae7z68bndp9boiug3yzb7quud5x1o2mfgx5en11trvvpetyc4y504fo20g5owwh634wlqgct49grg9xle3wmj7y0vxliid2rdto1k0rvbr9t4blb65kafgcruujyp3cu3q4idlix5an30qc7ato0nbv6vf1m3t219vbkjdyc7nyxrs3iprqefno27z9fv42xgzfdznb7om78tsnn2qxhwdpgk2kty8ovlegfe44mgd5fy9n0o058bqce0lbpsq3mvc1zwb8lbfuwfxwjaugv4f3x6ge4n0ckjp3ky1on25yuuk47rc83gtf84umdwwe62jvyjwb6leabpb0urt1jskstlocdlwdmco6xjfd34gerascw746usp765y3ipmtazre05mmqeo1a8uubpnir52jmkmv4e6i6z74zbn2pzc9hlc1lhu2z4yfuvc8t2bwn2sx9q6m96ocwbs5titcusjy8x46e27j9rzo2i9yn0f5p467rydwwxxvgz5c9axu0zou9ssu0umch8gf9dnisw3o18p8qnhacaz08wxr3y1fn6slkoowlm3ydrerxwqwgfgufq19b83k7sk3xq4oix8lgcwicsol6r7hjt7k8v43ofrqo4crdr0zspmy5n5g9yv4qqfhz1s9idyd84dysdd3jdxv78sejo54cliuarmx2u93qm4x9sww03va61205tqqn42gpm2b8ut7owv1srohdcyueeprdbblm9do6pxdyq5pk5n5rv371i1o3dzr28kqw52lz852m73kan1sde66ufqij94mwf6ijsnhas6s2a9kgnvqbt95zbn0nti5hytg25hqdat3pjcmls43zynli8ofkspz3bdrvlb3b41wizlmzgiybmm8s2yon7v6g0qpt2lzvizwtgdo0cwjpt5fr9igsucxxogtbeg3kyyalqsci0uhnwbf659grgf5btcrjbx3u4hrl84uvz730cq15a72nykbd2abhkknsoquk5yzokualjjrxzbrwvrnq4o56ggqmmis3c6uz0ijva6xxijxs1qqiiro1ikuhu43kjb9dhlmujkhqpj1m9ix44y9bjkl8ys5wul5ujtv58i4tsfsuwx456ti6874giu49tqntjipd6143ka1qjw06w2dd3r3nfdj2korh48f29u2sr82wgfdu7oy2j7qf6mzzagm28zu41sqlvgzd1lua3fcjucnncastdqvxjyovtq4m6y62vrs0e6v4rxr4dcfmv0bipkf3zh336ars1tr4lb98fwye3kd98z942qv2d503tksjm2kqx9vqabg3v08bms7dpmbjtu3k46nw21x2k11shootny94plu3m6267545ne1efni3tq0pwt27qnl661rsbseioxijd6f134k7omikgj2fhqqi1npxw69a0iazd0507eyrv7xccv0ppsrsttnvqz94h6kp1hc5zqccse2sxqqsnkl2e84fly9yyadl9pg5wtjz7fm24spbz6kaa0b51gf9kkjc7lspcwk7vsgip499yxzdfnbq1rrdm8zvsyiijs1pwof99dmz8dgsv3hh2udsr3rqs2664iacs4u1ndss17ozoifhca6ywbrzf33ren2ca62turiduokk5hn2ze4aqi6sporbywy53smm35n13yzyzyyt73ifvdm5zyjadgkrjc8foy850kcgr5f9vbh3d4q71ndisp2s6nmj3nc2beyzt878y286qc2s9p13aw4x85z1mmet42lr8xqqy5fsjfx44lwlw1hsq9xyk2iertruborjw5wnpyt1srh6nsmswc83j5he6o42w9esuoostzshc9izfxbnzql8w7nnudefrjezwa3m8v8qqj648itluojkxdibimbby0oetsf9xz27gs1wgafdvrx1nn1sp6fk5ic1440tsf0w1us86qwr8ij2n5fomx3vrr3rss8u5ppktkbz6i58rupdde5t5w7ggymxmluzrz119ub1dc1u50ra4fwte7z8fqqogq09w16omtdqbdwlhi63pxphj0g1b04wqzz4f12064pwdmjo0lr33fejstzkw7xw4tz7cz4kvnb3mqgjxuzuyl89dr4htnqvb9r2048yu7laprzo4o3oepxvqi3byzbzsieoj5gzvyldzsya68zkqmerlhoz41xyyygz20rl0mzswdnhvkwspx51q2rdfosb9kciou6wp5jrqsydhqjw6ohpljehycr232vm8406kley0wvpq94zr8f7yy1lqx67bgx62viko8jff4zhabqggxtjay4fw1tl3a163ly46xyfs1aea7wbn837fmdeiea1862tffrocunf5a6ful9055t9vxt5tqdbf9y2a1f82mx6quksxhi4l9cb9xu11xft9tq6bypeg2k8hjh5vqs5shwldi1avafptb45ah1tjztz1nob38bwqdaoq4stixbz8hvdxeaen0bxauo23rb2lynn7pea2qjp51kyh3wuson20bhqwmojdacmhshiwggcuuzpg2en58rm69cd9wzseszwd27di19kcgbuvgbj4xv4hpqxpxomcjiujqwo0am83ojdot2tedez6if72uvcaquqqft1nrnhtrs7ac2tbtoafdawe1v715l214cyqv0frikvx5xzziu9z2c0h3vqycgzrqqcu9nempyvi6qenlujdchfi78ts30xdo4z4dlv9038fwpxi92h84oa5axzctojqet3nbecy4z3ctcu2i3llsmcs499lmhz8bb99y41s3uwf7dgy39r4hmubef1a4kkqm9dwl51y21b3n2v584nfgg3k3t6ifp350l6x93l3go9unqq0xzbj3pn1ryuzyda74r76pvmud1f3akx6recunnchb0mxg6xnveriw3qnh8j3ybouu52px9mn1hg9jqiw8n4hukel1xclh7cxioer5x83ld6w0fejj9sey9c8jmw6a4fge1ksv87hhuz7usq9lxowkjvist06d479l0cf52ksdhl1vsq35o59nj43zmxrvne24lkrw8pnlnjyivr9i9bjltd6qz8c9w8jq2hg5pfqu5o6wb3dw1xnnxm0sgd39hx72343kw4tqukt3h8mx22hmr8vt2xv85udsob7umzp2ay8zyh8hyrwecgfcy6xo7hix90</span>";
 					}
 				});
 				pairText.style.fontSize = "2em";
 			});
-		}
-
-		function openTab(tabIndex) {
-			var tabs = document.getElementsByClassName("tab");
-			var tabButtons = document.getElementsByClassName("tabButton");
-
-			// Hide all tabs and deactivate tab buttons
-			for (var i = 0; i < tabs.length; i++) {
-				tabs[i].style.display = "none";
-				tabButtons[i].classList.remove("active");
-			}
-
-			// Show the selected tab and activate its button
-			tabs[tabIndex - 1].style.display = "block";
-			tabButtons[tabIndex - 1].classList.add("active");
 		}
 	</script>
 </body>
